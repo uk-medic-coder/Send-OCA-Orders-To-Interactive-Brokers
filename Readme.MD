@@ -1,10 +1,14 @@
 # Python Send One-Cancels-Another (OCA) Orders to Interactive Brokers
 
-It can be difficult to enter OCA orders into Interactive Broker's TWS software.
+It can be difficult to enter OCA orders into Interactive Broker's TWS software. It is fiddly to use, and if you are entering multiple symbols in, it can be time consuming.
+
+Also - the IB API is difficult to use. It is multithreaded and event driven, making the level of coding standard needed to code an order transmitting app higher.
 
 This handy python script allows you to enter a list of stocks, and enter a stop loss and take profit (% value). The latest price for each stock is downloaded from Yahoo Finance (free site for financial data), and the stop loss/take profit level is calculated automatically from this.
 
 The orders will then be transmitted to TWS live.
+
+They are transmitted as OCA orders - ie. whichever comes first, SL or TP, this then cancels the other order, and exits the position.
 
 eg:
 
