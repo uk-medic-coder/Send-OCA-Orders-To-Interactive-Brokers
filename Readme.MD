@@ -34,6 +34,6 @@ python main.py
 
 TWS will need to be open for orders to be sent live.
 
-*NOTE: Please check the "API" and "Pending" tabs that will open with your orders on TWS to ensure that the orders have been sent through correctly.*
-
 **These scripts send live orders to the stock exchange. If you use these scripts, it is totally at your own risk. I accept NO responsibility for any losses or errors (financial or otherwise) that may occur from the use of these scripts. If you are unsure, do not use them.**
+
+NOTE: Please check the "API" and "Pending" tabs that will open with your orders on TWS to ensure that the orders have been sent through correctly.
